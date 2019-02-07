@@ -1,4 +1,4 @@
-package Login;
+  package Login;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -53,6 +53,7 @@ public class checkInOut {
 		driver.findElementById("in.qlc.fieldsense:id/swPunch").click();
 		Thread.sleep(1000);
 		driver.findElementById("in.qlc.fieldsense:id/img_toggle").click();
+		Thread.sleep(1000);
 		
 		 
 	       driver.findElementById("in.qlc.fieldsense:id/img_checked_in").click();

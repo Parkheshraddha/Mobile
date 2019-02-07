@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\parkhe\AppData\Local\Temp\testng-eclipse--2638913\testng-customsuite.xml</span>
+                    <span>C:\Users\parkhe\AppData\Local\Temp\testng-eclipse--531165535\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Login.launch" hash-for-method="applaunch">applaunch</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Login.checkInOut" hash-for-method="applaunch">applaunch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,7 +120,7 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Login.launch</span>
+              <span class="class-name">Login.checkInOut</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -128,27 +128,24 @@
                   <a name="applaunch">
                   </a> <!-- applaunch -->
                   <span class="method-name">applaunch</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/apache/commons/lang3/StringUtils
-	at io.appium.java_client.HasSessionDetails.lambda$0(HasSessionDetails.java:49)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at com.google.common.collect.CollectSpliterators$1.lambda$forEachRemaining$1(CollectSpliterators.java:115)
-	at com.google.common.collect.CollectSpliterators$1.lambda$forEachRemaining$1(CollectSpliterators.java:115)
-	at java.util.HashMap$EntrySpliterator.forEachRemaining(Unknown Source)
-	at com.google.common.collect.CollectSpliterators$1.forEachRemaining(CollectSpliterators.java:115)
-	at com.google.common.collect.CollectSpliterators$1.forEachRemaining(CollectSpliterators.java:115)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.collect(Unknown Source)
-	at io.appium.java_client.HasSessionDetails.getSessionDetails(HasSessionDetails.java:52)
-	at io.appium.java_client.HasSessionDetails.getSessionDetail(HasSessionDetails.java:56)
-	at io.appium.java_client.HasSessionDetails.getPlatformName(HasSessionDetails.java:65)
-	at io.appium.java_client.internal.JsonToMobileElementConverter.&lt;init&gt;(JsonToMobileElementConverter.java:49)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:77)
-	at Login.launch.applaunch(launch.java:40)
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: org.apache.http.NoHttpResponseException: 127.0.0.1:4723 failed to respond
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:26.402Z&apos;
+System info: host: &apos;SHRADDHA-PC&apos;, ip: &apos;192.168.1.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:144)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at Login.checkInOut.applaunch(checkInOut.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -174,12 +171,26 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.apache.commons.lang3.StringUtils
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	... 45 more
+Caused by: org.apache.http.NoHttpResponseException: 127.0.0.1:4723 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:156)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
+	... 38 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -189,7 +200,7 @@ Caused by: java.lang.ClassNotFoundException: org.apache.commons.lang3.StringUtil
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\parkhe\AppData\Local\Temp\testng-eclipse--2638913\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\parkhe\AppData\Local\Temp\testng-eclipse--531165535\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,7 +209,7 @@ Caused by: java.lang.ClassNotFoundException: org.apache.commons.lang3.StringUtil
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Login.launch&quot;/&gt;
+      &lt;class name=&quot;Login.checkInOut&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -241,13 +252,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'applaunch')
-data.setCell(0, 2, 'Login.launch')
-data.setCell(0, 3, 13107);
+data.setCell(0, 2, 'Login.checkInOut')
+data.setCell(0, 3, 1271541);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 21 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -273,7 +284,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Login.launch</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Login.checkInOut</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>

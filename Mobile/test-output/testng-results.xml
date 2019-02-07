@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13132" started-at="2019-02-05T10:01:29Z" finished-at="2019-02-05T10:01:42Z">
+  <suite name="Default suite" duration-ms="1271570" started-at="2019-02-07T05:54:03Z" finished-at="2019-02-07T06:15:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13132" started-at="2019-02-05T10:01:29Z" finished-at="2019-02-05T10:01:42Z">
-      <class name="Login.launch">
-        <test-method status="FAIL" signature="applaunch()[pri:0, instance:Login.launch@5e5792a0]" name="applaunch" duration-ms="13107" started-at="2019-02-05T10:01:29Z" finished-at="2019-02-05T10:01:42Z">
-          <exception class="java.lang.NoClassDefFoundError">
+    <test name="Default test" duration-ms="1271570" started-at="2019-02-07T05:54:03Z" finished-at="2019-02-07T06:15:14Z">
+      <class name="Login.checkInOut">
+        <test-method status="FAIL" signature="applaunch()[pri:0, instance:Login.checkInOut@3532ec19]" name="applaunch" duration-ms="1271541" started-at="2019-02-07T05:54:03Z" finished-at="2019-02-07T06:15:14Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[org/apache/commons/lang3/StringUtils]]>
+              <![CDATA[org.apache.http.NoHttpResponseException: 127.0.0.1:4723 failed to respond
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:26.402Z'
+System info: host: 'SHRADDHA-PC', ip: '192.168.1.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: AndroidDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/lang3/StringUtils
-at io.appium.java_client.HasSessionDetails.lambda$0(HasSessionDetails.java:49)
-at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-at com.google.common.collect.CollectSpliterators$1.lambda$forEachRemaining$1(CollectSpliterators.java:115)
-at com.google.common.collect.CollectSpliterators$1.lambda$forEachRemaining$1(CollectSpliterators.java:115)
-at java.util.HashMap$EntrySpliterator.forEachRemaining(Unknown Source)
-at com.google.common.collect.CollectSpliterators$1.forEachRemaining(CollectSpliterators.java:115)
-at com.google.common.collect.CollectSpliterators$1.forEachRemaining(CollectSpliterators.java:115)
-at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
-at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-at java.util.stream.ReferencePipeline.collect(Unknown Source)
-at io.appium.java_client.HasSessionDetails.getSessionDetails(HasSessionDetails.java:52)
-at io.appium.java_client.HasSessionDetails.getSessionDetail(HasSessionDetails.java:56)
-at io.appium.java_client.HasSessionDetails.getPlatformName(HasSessionDetails.java:65)
-at io.appium.java_client.internal.JsonToMobileElementConverter.<init>(JsonToMobileElementConverter.java:49)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:77)
-at Login.launch.applaunch(launch.java:40)
+              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.NoHttpResponseException: 127.0.0.1:4723 failed to respond
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:26.402Z'
+System info: host: 'SHRADDHA-PC', ip: '192.168.1.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:144)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at Login.checkInOut.applaunch(checkInOut.java:59)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -59,19 +59,33 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.apache.commons.lang3.StringUtils
-at java.net.URLClassLoader.findClass(Unknown Source)
-at java.lang.ClassLoader.loadClass(Unknown Source)
-at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-at java.lang.ClassLoader.loadClass(Unknown Source)
-... 45 more
+Caused by: org.apache.http.NoHttpResponseException: 127.0.0.1:4723 failed to respond
+at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:156)
+at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
+... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applaunch -->
-      </class> <!-- Login.launch -->
+      </class> <!-- Login.checkInOut -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
